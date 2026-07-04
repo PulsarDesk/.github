@@ -59,9 +59,11 @@ Pulsar is currently in **Alpha** (0.x). Releases are cut automatically from
 
 | Repo | What |
 | ---- | ---- |
-| [**pulsar**](https://github.com/PulsarDesk/pulsar) | The app — desktop **and** mobile (Tauri 2 · SvelteKit · Rust core) |
+| [**pulsar-desktop**](https://github.com/PulsarDesk/pulsar-desktop) | Desktop app — Windows / macOS / Linux (Tauri 2 · SvelteKit · Rust) |
+| [**pulsar-mobile**](https://github.com/PulsarDesk/pulsar-mobile) | Mobile app — Android + iOS (Tauri 2) |
+| [**pulsar-core**](https://github.com/PulsarDesk/pulsar-core) | Shared engine — client/host/streaming core (Rust); both apps depend on it |
 | [**relay**](https://github.com/PulsarDesk/relay) | Self-hostable rendezvous / relay server (Rust, tokio UDP) |
-| [**pulsar-proto**](https://github.com/PulsarDesk/pulsar-proto) | Shared wire protocol (relay ↔ app) |
+| [**pulsar-proto**](https://github.com/PulsarDesk/pulsar-proto) | Shared wire protocol (relay ↔ apps) |
 | [**web**](https://github.com/PulsarDesk/web) | Marketing site (SvelteKit on Cloudflare Pages) |
 | [**design**](https://github.com/PulsarDesk/design) | Design system &amp; brand handoff (tokens are the source of truth) |
 
@@ -69,9 +71,11 @@ Pulsar is currently in **Alpha** (0.x). Releases are cut automatically from
 
 ## ⬇️ Trying Pulsar
 
-Grab the latest build for your platform from
-[**pulsar/releases**](https://github.com/PulsarDesk/pulsar/releases) — Windows, macOS,
-Linux (x64 **and** ARM64 for Orange Pi / Raspberry Pi), Android and iOS.
+Grab the latest desktop build from
+[**pulsar-desktop/releases**](https://github.com/PulsarDesk/pulsar-desktop/releases) —
+Windows, macOS, Linux (x64 **and** ARM64 for Orange Pi / Raspberry Pi) — or the mobile
+build from [**pulsar-mobile/releases**](https://github.com/PulsarDesk/pulsar-mobile/releases)
+(Android + iOS).
 
 Want your own relay? Download a prebuilt binary from
 [**relay/releases**](https://github.com/PulsarDesk/relay/releases), point your devices at
