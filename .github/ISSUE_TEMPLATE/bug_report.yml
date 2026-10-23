@@ -1,0 +1,47 @@
+name: Bug report
+description: Something doesn't work (black screen, no connection, crash, ...)
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting! Short answers are fine. Please write in English or Turkish.
+  - type: input
+    id: version
+    attributes:
+      label: Pulsar version
+      description: Settings -> General -> Version, or the release you downloaded.
+      placeholder: "0.13.4"
+    validations:
+      required: true
+  - type: textarea
+    id: devices
+    attributes:
+      label: Your devices
+      description: Both sides of the connection. System (Windows 11, macOS 15, Ubuntu 24.04 Wayland, Android 14, ...), graphics card, and which side shares its screen.
+      placeholder: |
+        Sharing: Windows 11, NVIDIA RTX 3060
+        Connecting: Android 14, Samsung Galaxy S23
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What you did, what you expected, what you got instead.
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Log
+      description: |
+        Desktop: Settings -> General -> Open log folder, attach today's file.
+        Linux: also paste the output of `Pulsar.AppImage --selftest`.
+        Relay: the relay's output (remove passwords and 2FA secrets).
+      render: text
+  - type: textarea
+    id: extra
+    attributes:
+      label: Anything else?
+      description: Screenshots, screen recordings, how often it happens.

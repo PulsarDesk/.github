@@ -1,106 +1,65 @@
 <p align="center">
-  <img width="120" height="120" src="https://raw.githubusercontent.com/PulsarDesk/.github/main/profile/logo.svg" alt="Pulsar Logo">
+  <img width="120" height="120" src="https://raw.githubusercontent.com/PulsarDesk/.github/main/profile/logo.svg" alt="Pulsar logo">
 </p>
 
 <h1 align="center">Pulsar</h1>
 
 <p align="center">
-  A <b>free, open-source</b> remote-desktop &amp; game-streaming app — a self-hostable
-  alternative to Parsec, TeamViewer, AnyDesk and RustDesk. ⚡
+  Free, open-source <b>remote desktop and game streaming</b>. No account, no telemetry, run your own server if you like. ⚡
 </p>
 
 <p align="center">
+  <a href="https://pulsardesk.com"><img src="https://img.shields.io/badge/website-pulsardesk.com-5B57E0?style=for-the-badge" alt="Website"></a>
   <img src="https://img.shields.io/badge/status-alpha-orange?style=for-the-badge" alt="Status">
-  <img src="https://img.shields.io/maintenance/yes/2026?style=for-the-badge" alt="Maintained">
-  <img src="https://img.shields.io/badge/license-GPLv3-5B57E0?style=for-the-badge" alt="License">
-  <img src="https://img.shields.io/badge/platforms-Windows%20·%20macOS%20·%20Linux%20·%20Android%20·%20iOS-5B57E0?style=for-the-badge" alt="Platforms">
+  <img src="https://img.shields.io/badge/license-GPL--3.0-5B57E0?style=for-the-badge" alt="License">
 </p>
 
 ---
 
-## ⚡ What is Pulsar?
+## 👋 What is Pulsar?
+One app, two jobs: **control another computer** (help a friend, reach your own PC) and **stream games** from it with
+a controller, keyboard or mouse. Connect with a device **ID and one-time password**.
 
-One app, two jobs:
-
-- 🎮 **Game streaming** *(Sunshine/Parsec-style)* — low-latency remote play, controller +
-  keyboard/mouse, hardware **H.265 / AV1**, up to **120 fps**, **HDR**.
-- 🖥️ **Remote desktop & management** *(TeamViewer/RustDesk-style)* — connect with a
-  device **ID + one-time password**, unattended access, file transfer, multi-monitor.
-
-Built for **gamers** (latency first) and **IT / support teams**. Runs on **Windows,
-macOS, Linux, Android and iOS**.
+Pulsar connects devices directly when it can and through a relay when it can't. Sessions are end-to-end encrypted:
+the relay only forwards data it cannot read. The relay is open source too, so you can run your own.
 
 ---
 
-## 🔒 How it connects
+## 📦 Projects
+| Project | What it does | Platforms |
+|---|---|---|
+| [**Pulsar Desktop**](https://github.com/PulsarDesk/pulsar-desktop) | The app for computers | Windows, macOS, Linux (x64, arm64) |
+| [**Pulsar Mobile**](https://github.com/PulsarDesk/pulsar-mobile) | The app for phones, tablets and TVs | Android (iOS later) |
+| [**Relay**](https://github.com/PulsarDesk/relay) | Run your own Pulsar server | Docker, Linux, Windows, macOS |
+| [**Website**](https://github.com/PulsarDesk/web) | [pulsardesk.com](https://pulsardesk.com) | — |
 
-- **Automatic P2P → relay.** Pulsar tries a **direct peer-to-peer** connection first and
-  **automatically falls back to a relay** when NAT/firewall hole-punching fails. Never an
-  either/or choice.
-- **You own the identity.** The **device ID is issued by the relay** — and the relay is
-  **self-hostable**, so identity distribution *and* fallback transport can be fully yours.
-- **End-to-end encrypted, zero-knowledge.** X25519 + ChaCha20-Poly1305; keys live only on
-  your devices; the relay only ever forwards ciphertext. **No account. No telemetry.**
+Behind the scenes: [pulsar-core](https://github.com/PulsarDesk/pulsar-core) (shared engine),
+[pulsar-proto](https://github.com/PulsarDesk/pulsar-proto) (messages), [design](https://github.com/PulsarDesk/design)
+(colors, fonts, screens).
 
----
-
-## 📢 Release Types
-
-Pulsar is currently in **Alpha** (0.x). Releases are cut automatically from
-[Conventional Commits](https://www.conventionalcommits.org/):
-
-- **Alpha** — early-stage. Experimental features, possible breaking changes, rough edges.
-- **Beta** — feature-complete and generally stable. Good for early adopters.
-- **Release** — stable and production-ready.
+All projects are in early (alpha) development. Each app's README lists the systems and graphics cards it has been
+tested on.
 
 ---
 
-## 📦 Repositories
-
-| Repo | What |
-| ---- | ---- |
-| [**pulsar-desktop**](https://github.com/PulsarDesk/pulsar-desktop) | Desktop app — Windows / macOS / Linux (Tauri 2 · SvelteKit · Rust) |
-| [**pulsar-mobile**](https://github.com/PulsarDesk/pulsar-mobile) | Mobile app — Android + iOS (Tauri 2) |
-| [**pulsar-core**](https://github.com/PulsarDesk/pulsar-core) | Shared engine — client/host/streaming core (Rust); both apps depend on it |
-| [**relay**](https://github.com/PulsarDesk/relay) | Self-hostable rendezvous / relay server (Rust, tokio UDP) |
-| [**pulsar-proto**](https://github.com/PulsarDesk/pulsar-proto) | Shared wire protocol (relay ↔ apps) |
-| [**web**](https://github.com/PulsarDesk/web) | Marketing site (SvelteKit on Cloudflare Pages) |
-| [**design**](https://github.com/PulsarDesk/design) | Design system &amp; brand handoff (tokens are the source of truth) |
+## ⬇️ Download
+- **Computer:** [pulsar-desktop releases](https://github.com/PulsarDesk/pulsar-desktop/releases/latest)
+- **Android:** [Pulsar-android.apk](https://github.com/PulsarDesk/pulsar-mobile/releases/latest/download/Pulsar-android.apk)
+- Or go to [pulsardesk.com](https://pulsardesk.com), which picks the right file for you.
 
 ---
 
-## ⬇️ Trying Pulsar
-
-Grab the latest desktop build from
-[**pulsar-desktop/releases**](https://github.com/PulsarDesk/pulsar-desktop/releases) —
-Windows, macOS, Linux (x64 **and** ARM64 for Orange Pi / Raspberry Pi) — or the mobile
-build from [**pulsar-mobile/releases**](https://github.com/PulsarDesk/pulsar-mobile/releases)
-(Android + iOS).
-
-Want your own relay? Download a prebuilt binary from
-[**relay/releases**](https://github.com/PulsarDesk/relay/releases), point your devices at
-`your-host:port`, and you're self-hosting.
-
----
-
-## 🛠️ Built with
-
-- **Rust** — the performant client / host / streaming core, the relay, and the shared protocol.
-- **Tauri 2 + SvelteKit (Svelte 5)** — one cross-platform shell for both the *client* and *host* roles.
-- **gilrs / uinput / ViGEmBus** — controller capture and virtual-gamepad replay.
-- Hardware A/V — **NVENC · AMF · QuickSync · VideoToolbox · VAAPI**, software baseline everywhere.
+## 🐞 Found a bug?
+Open an issue in the app you were using: [desktop](https://github.com/PulsarDesk/pulsar-desktop/issues/new/choose)
+or [mobile](https://github.com/PulsarDesk/pulsar-mobile/issues/new/choose). Reports from real devices help the most:
+include your system, graphics card and the app's log.
 
 ---
 
 ## 🤝 Contributing
-
-Issues and pull requests are welcome across all repositories. Each repo runs CI (Rust +
-JS tests) on every push and PR; releases are cut by semantic-release from Conventional
-Commits. Please keep tests green and follow the existing style.
+Everyone can open issues and pull requests in the project repositories.
 
 ---
 
 ## 📄 License
-
-Every Pulsar repository is licensed under the **GNU General Public License v3.0**
-(**GPLv3**) — fully open source. See each repo's `LICENSE` for details.
+All Pulsar projects are licensed under **GNU GPLv3 or later** (GPL-3.0-or-later).
