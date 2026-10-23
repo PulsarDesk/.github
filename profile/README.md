@@ -5,7 +5,7 @@
 <h1 align="center">Pulsar</h1>
 
 <p align="center">
-  Free, open-source <b>remote desktop and game streaming</b>. No account, no telemetry, run your own server if you like. ⚡
+  Free, open-source <b>remote desktop and game streaming</b>: an alternative to TeamViewer, AnyDesk, Parsec and RustDesk. No account, no telemetry. ⚡
 </p>
 
 <p align="center">
