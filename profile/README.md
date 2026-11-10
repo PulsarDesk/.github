@@ -1,11 +1,8 @@
-<p align="center">
-  <img width="120" height="120" src="https://raw.githubusercontent.com/PulsarDesk/.github/main/profile/logo.svg" alt="Pulsar logo">
-</p>
-
 <h1 align="center">Pulsar</h1>
 
 <p align="center">
-  Free, open-source <b>remote desktop and game streaming</b>: an alternative to TeamViewer, AnyDesk, Parsec and RustDesk. No account, no telemetry. ⚡
+  Free, open-source <b>remote desktop and game streaming</b>. An alternative to TeamViewer, AnyDesk, Parsec and
+  RustDesk, with no account and no telemetry.
 </p>
 
 <p align="center">
@@ -16,50 +13,54 @@
 
 ---
 
-## 👋 What is Pulsar?
-One app, two jobs: **control another computer** (help a friend, reach your own PC) and **stream games** from it with
-a controller, keyboard or mouse. Connect with a device **ID and one-time password**.
+## What is Pulsar?
+Pulsar does two things with one app:
 
-Pulsar connects devices directly when it can and through a relay when it can't. Sessions are end-to-end encrypted:
-the relay only forwards data it cannot read. The relay is open source too, so you can run your own.
+- **Remote desktop:** reach your own computer from anywhere, or help a friend with theirs.
+- **Game streaming:** play games running on another PC with a controller, keyboard or mouse.
+
+To connect, enter the other device's **ID and one-time password**. Pulsar connects the two devices directly when the
+network allows it, and through a relay server when it doesn't. Every session is end-to-end encrypted, so the relay
+only forwards data it cannot read. The relay is open source too, and you can run your own.
 
 ---
 
-## 📦 Projects
+## Projects
 | Project | What it does | Platforms |
 |---|---|---|
 | [**Pulsar Desktop**](https://github.com/PulsarDesk/pulsar-desktop) | The app for computers | Windows, macOS, Linux (x64, arm64) |
-| [**Pulsar Mobile**](https://github.com/PulsarDesk/pulsar-mobile) | The app for phones, tablets and TVs | Android (iOS later) |
-| [**Relay**](https://github.com/PulsarDesk/relay) | Run your own Pulsar server | Docker, Linux, Windows, macOS |
+| [**Pulsar Mobile**](https://github.com/PulsarDesk/pulsar-mobile) | The app for phones and tablets | Android, iOS (not released yet) |
+| [**Relay**](https://github.com/PulsarDesk/relay) | Your own Pulsar server | Docker, Linux, Windows, macOS |
 | [**Website**](https://github.com/PulsarDesk/web) | [pulsardesk.com](https://pulsardesk.com) | — |
 
-Behind the scenes: [pulsar-core](https://github.com/PulsarDesk/pulsar-core) (shared engine),
-[pulsar-proto](https://github.com/PulsarDesk/pulsar-proto) (messages), [design](https://github.com/PulsarDesk/design)
-(colors, fonts, screens).
+Shared building blocks: [pulsar-core](https://github.com/PulsarDesk/pulsar-core) (the streaming engine both apps use),
+[pulsar-proto](https://github.com/PulsarDesk/pulsar-proto) (the network protocol) and
+[design](https://github.com/PulsarDesk/design) (colors, fonts, screens).
 
-All projects are in early (alpha) development. Each app's README lists the systems and graphics cards it has been
-tested on.
+Everything is in early (alpha) development. Each app's README lists the systems and graphics cards it has been tested
+on.
 
 ---
 
-## ⬇️ Download
+## Download
 - **Computer:** [pulsar-desktop releases](https://github.com/PulsarDesk/pulsar-desktop/releases/latest)
 - **Android:** [Pulsar-android.apk](https://github.com/PulsarDesk/pulsar-mobile/releases/latest/download/Pulsar-android.apk)
-- Or go to [pulsardesk.com](https://pulsardesk.com), which picks the right file for you.
+- Or visit [pulsardesk.com](https://pulsardesk.com), which picks the right file for your system.
 
 ---
 
-## 🐞 Found a bug?
-Open an issue in the app you were using: [desktop](https://github.com/PulsarDesk/pulsar-desktop/issues/new/choose)
-or [mobile](https://github.com/PulsarDesk/pulsar-mobile/issues/new/choose). Reports from real devices help the most:
-include your system, graphics card and the app's log.
+## Found a bug?
+Open an issue in the repository of the app you were using:
+[desktop](https://github.com/PulsarDesk/pulsar-desktop/issues/new/choose) or
+[mobile](https://github.com/PulsarDesk/pulsar-mobile/issues/new/choose). Reports from real devices help the most.
+Include your operating system, graphics card and the app's log file.
 
 ---
 
-## 🤝 Contributing
-Everyone can open issues and pull requests in the project repositories.
+## Contributing
+Issues and pull requests are welcome in every project repository.
 
 ---
 
-## 📄 License
+## License
 All Pulsar projects are licensed under **GNU GPLv3 or later** (GPL-3.0-or-later).
