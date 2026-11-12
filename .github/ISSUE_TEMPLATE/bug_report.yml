@@ -10,8 +10,24 @@ body:
     id: version
     attributes:
       label: Pulsar version
-      description: Settings -> General -> Version, or the release you downloaded.
-      placeholder: "0.13.4"
+      description: Settings -> General -> Version, or the release you downloaded. Both sides if they differ.
+      placeholder: "0.22.0"
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Where does it happen?
+      description: The device that shows the problem. Pick all that apply.
+      multiple: true
+      options:
+        - Windows
+        - macOS
+        - Linux
+        - Orange Pi / other single-board computer
+        - Android
+        - iOS
+        - Relay server
     validations:
       required: true
   - type: textarea
@@ -24,6 +40,26 @@ body:
         Connecting: Android 14, Samsung Galaxy S23
     validations:
       required: true
+  - type: dropdown
+    id: mode
+    attributes:
+      label: Mode
+      options:
+        - Remote desktop
+        - Game streaming
+        - Not in a session (home screen, settings, install, update)
+    validations:
+      required: true
+  - type: dropdown
+    id: link
+    attributes:
+      label: Connection
+      description: Shown in the session menu or the status bar.
+      options:
+        - Direct (P2P)
+        - Relay
+        - Same network (LAN)
+        - Don't know
   - type: textarea
     id: what
     attributes:
@@ -31,6 +67,14 @@ body:
       description: What you did, what you expected, what you got instead.
     validations:
       required: true
+  - type: dropdown
+    id: often
+    attributes:
+      label: How often?
+      options:
+        - Every time
+        - Sometimes
+        - Happened once
   - type: textarea
     id: logs
     attributes:
@@ -44,4 +88,4 @@ body:
     id: extra
     attributes:
       label: Anything else?
-      description: Screenshots, screen recordings, how often it happens.
+      description: Screenshots, screen recordings, what changed before it started.

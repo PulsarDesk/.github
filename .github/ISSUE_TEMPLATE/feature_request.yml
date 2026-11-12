@@ -1,0 +1,56 @@
+name: Feature request
+description: An idea for something Pulsar should do, or do differently
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the idea! Short answers are fine. Please write in English or Turkish.
+  - type: input
+    id: version
+    attributes:
+      label: Pulsar version
+      description: Settings -> General -> Version. Helps us check whether it already exists.
+      placeholder: "0.22.0"
+  - type: textarea
+    id: what
+    attributes:
+      label: What would you like?
+      description: The feature, in a few sentences. How it should look or behave.
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why?
+      description: The problem it solves, or what you do today instead.
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Which devices is it for?
+      multiple: true
+      options:
+        - All of them
+        - Windows
+        - macOS
+        - Linux
+        - Orange Pi / other single-board computer
+        - Android
+        - iOS
+        - Relay server
+  - type: dropdown
+    id: mode
+    attributes:
+      label: Which mode?
+      options:
+        - Both
+        - Remote desktop
+        - Game streaming
+        - Not session-related
+  - type: textarea
+    id: prior
+    attributes:
+      label: Seen it elsewhere?
+      description: Apps that do this (Parsec, Moonlight, AnyDesk, RustDesk, ...), screenshots or links.
