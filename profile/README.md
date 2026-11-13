@@ -25,6 +25,19 @@ only forwards data it cannot read. The relay is open source too, and you can run
 
 ---
 
+## Highlights
+- **Game streaming:** up to 4K and 240 fps, H.264 / H.265 / AV1, 10-bit HDR, a stream that keeps tuning itself to
+  the link, FSR / NVIDIA RTX / Intel video upscaling, and a real DualSense on the host (adaptive triggers, haptics,
+  headset jack, mic).
+- **Remote desktop:** browser-like tabs you can tear off and merge, split screen, multi-monitor, file manager,
+  clipboard, chat and microphone.
+- **Security:** end-to-end encryption that is always on (PAKE with forward secrecy), approve / deny, trusted
+  devices, unattended access and two-factor authentication.
+- **Network:** peer-to-peer first (NAT punching, UPnP / NAT-PMP, works over ZeroTier and Tailscale), with a relay you
+  can host yourself.
+
+---
+
 ## Projects
 | Project | What it does | Platforms |
 |---|---|---|
