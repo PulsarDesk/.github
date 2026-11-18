@@ -1,79 +1,92 @@
-<h1 align="center">Pulsar</h1>
+<p align="center">
+  <a href="https://pulsardesk.com"><img src="https://raw.githubusercontent.com/PulsarDesk/.github/main/profile/assets/hero.png" alt="Pulsar: your computer, anywhere" width="100%"></a>
+</p>
+
+<h3 align="center">Free, open-source remote desktop and game streaming.</h3>
 
 <p align="center">
-  Free, open-source <b>remote desktop and game streaming</b>. An alternative to TeamViewer, AnyDesk, Parsec and
-  RustDesk, with no account and no telemetry.
+  Reach your own computer from anywhere, help a friend with theirs, or play your PC games on another screen.<br>
+  An alternative to TeamViewer, AnyDesk, Parsec and RustDesk with <b>no account</b>, <b>no subscription</b> and <b>no tracking</b>.
 </p>
 
 <p align="center">
-  <a href="https://pulsardesk.com"><img src="https://img.shields.io/badge/website-pulsardesk.com-5B57E0?style=for-the-badge" alt="Website"></a>
-  <img src="https://img.shields.io/badge/status-alpha-orange?style=for-the-badge" alt="Status">
-  <img src="https://img.shields.io/badge/license-GPL--3.0-5B57E0?style=for-the-badge" alt="License">
+  <a href="https://github.com/PulsarDesk/pulsar-desktop/releases/latest"><img src="https://img.shields.io/badge/Windows-Download-5B57E0?style=for-the-badge&logo=windows&logoColor=white" alt="Download for Windows"></a>
+  <a href="https://github.com/PulsarDesk/pulsar-desktop/releases/latest"><img src="https://img.shields.io/badge/macOS-Download-5B57E0?style=for-the-badge&logo=apple&logoColor=white" alt="Download for macOS"></a>
+  <a href="https://github.com/PulsarDesk/pulsar-desktop/releases/latest"><img src="https://img.shields.io/badge/Linux-Download-5B57E0?style=for-the-badge&logo=linux&logoColor=white" alt="Download for Linux"></a>
+  <a href="https://github.com/PulsarDesk/pulsar-mobile/releases/latest/download/Pulsar-android.apk"><img src="https://img.shields.io/badge/Android-Download-13B3D4?style=for-the-badge&logo=android&logoColor=white" alt="Download for Android"></a>
 </p>
 
----
+<p align="center">
+  <a href="https://pulsardesk.com"><b>pulsardesk.com</b></a> ·
+  <a href="https://github.com/PulsarDesk/pulsar-desktop"><b>Desktop app</b></a> ·
+  <a href="https://github.com/PulsarDesk/pulsar-mobile"><b>Android app</b></a> ·
+  <a href="https://github.com/PulsarDesk/relay"><b>Your own server</b></a>
+</p>
 
-## What is Pulsar?
-Pulsar does two things with one app:
+<br>
 
-- **Remote desktop:** reach your own computer from anywhere, or help a friend with theirs.
-- **Game streaming:** play games running on another PC with a controller, keyboard or mouse.
+<p align="center"><img src="https://raw.githubusercontent.com/PulsarDesk/.github/main/profile/assets/stats.png" alt="240 fps game streaming · 4K HDR · always end-to-end encrypted · no accounts, ads or tracking" width="100%"></p>
 
-To connect, enter the other device's **ID and one-time password**. Pulsar connects the two devices directly when the
-network allows it, and through a relay server when it doesn't. Every session is end-to-end encrypted, so the relay
-only forwards data it cannot read. The relay is open source too, and you can run your own.
+<table>
+<tr>
+<td width="50%" valign="top">
 
----
+### 🖥️ Remote desktop
+Help family and friends, or reach your own PC from the office. Tabs like a browser, split screen, file transfer,
+clipboard, chat and voice, all in one window.
 
-## Highlights
-- **Game streaming:** up to 4K and 240 fps, H.264 / H.265 / AV1, 10-bit HDR, a stream that keeps tuning itself to
-  the link, FSR / NVIDIA RTX / Intel video upscaling, and a real DualSense on the host (adaptive triggers, haptics,
-  headset jack, mic).
-- **Remote desktop:** browser-like tabs you can tear off and merge, split screen, multi-monitor, file manager,
-  clipboard, chat and microphone.
-- **Security:** end-to-end encryption that is always on (PAKE with forward secrecy), approve / deny, trusted
-  devices, unattended access and two-factor authentication.
-- **Network:** peer-to-peer first (NAT punching, UPnP / NAT-PMP, works over ZeroTier and Tailscale), with a relay you
-  can host yourself.
+</td>
+<td width="50%" valign="top">
 
----
+### 🎮 Game streaming
+Play your gaming PC from the couch, a laptop or your phone. Up to 4K and 240 fps with HDR, and your controller
+works like it's plugged in. A real DualSense, triggers and all.
 
-## Projects
-| Project | What it does | Platforms |
-|---|---|---|
-| [**Pulsar Desktop**](https://github.com/PulsarDesk/pulsar-desktop) | The app for computers | Windows, macOS, Linux (x64, arm64) |
-| [**Pulsar Mobile**](https://github.com/PulsarDesk/pulsar-mobile) | The app for phones and tablets | Android, iOS (not released yet) |
-| [**Relay**](https://github.com/PulsarDesk/relay) | Your own Pulsar server | Docker, Linux, Windows, macOS |
-| [**Website**](https://github.com/PulsarDesk/web) | [pulsardesk.com](https://pulsardesk.com) | — |
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
 
-Shared building blocks: [pulsar-core](https://github.com/PulsarDesk/pulsar-core) (the streaming engine both apps use),
-[pulsar-proto](https://github.com/PulsarDesk/pulsar-proto) (the network protocol) and
-[design](https://github.com/PulsarDesk/design) (colors, fonts, screens).
+### 🔒 Private by design
+Every session is end-to-end encrypted, always. Even the relay server only forwards data it can't read. No
+telemetry, no ads.
 
-Everything is in early (alpha) development. Each app's README lists the systems and graphics cards it has been tested
-on.
+</td>
+<td width="50%" valign="top">
 
----
+### ⚡ Just works
+Share an ID and a one-time password and you're in. Pulsar connects directly when it can and through a relay when
+it can't. No router settings, no sign-up.
 
-## Download
-- **Computer:** [pulsar-desktop releases](https://github.com/PulsarDesk/pulsar-desktop/releases/latest)
-- **Android:** [Pulsar-android.apk](https://github.com/PulsarDesk/pulsar-mobile/releases/latest/download/Pulsar-android.apk)
-- Or visit [pulsardesk.com](https://pulsardesk.com), which picks the right file for your system.
+</td>
+</tr>
+</table>
 
----
+<p align="center"><img src="https://raw.githubusercontent.com/PulsarDesk/.github/main/profile/assets/steps.png" alt="1. Install Pulsar on both devices. 2. Share the ID and one-time password. 3. You're connected, encrypted end to end." width="100%"></p>
 
-## Found a bug?
-Open an issue in the repository of the app you were using:
-[desktop](https://github.com/PulsarDesk/pulsar-desktop/issues/new/choose) or
-[mobile](https://github.com/PulsarDesk/pulsar-mobile/issues/new/choose). Reports from real devices help the most.
-Include your operating system, graphics card and the app's log file.
+## 🌌 Projects
 
----
+| | Project | What it is | Runs on |
+|---|---|---|---|
+| 🖥️ | [**Pulsar Desktop**](https://github.com/PulsarDesk/pulsar-desktop) | The app for computers | Windows, macOS, Linux (x64, arm64) |
+| 📱 | [**Pulsar Mobile**](https://github.com/PulsarDesk/pulsar-mobile) | The app for phones, tablets and TVs | Android (iOS not yet) |
+| 🛰️ | [**Pulsar Relay**](https://github.com/PulsarDesk/relay) | Your own Pulsar server, in one command | Docker, Linux, Windows, macOS |
+| 🌐 | [**Website**](https://github.com/PulsarDesk/web) | [pulsardesk.com](https://pulsardesk.com) | — |
 
-## Contributing
-Issues and pull requests are welcome in every project repository.
+Under the hood: [pulsar-core](https://github.com/PulsarDesk/pulsar-core) (the engine both apps share),
+[pulsar-proto](https://github.com/PulsarDesk/pulsar-proto) (the protocol) and
+[design](https://github.com/PulsarDesk/design) (colors, fonts and screens).
 
----
+## 💬 Get involved
 
-## License
-All Pulsar projects are licensed under **GNU GPLv3 or later** (GPL-3.0-or-later).
+Pulsar is in **alpha** and moving fast. Reports from real devices help the most:
+
+- 🐞 **Found a bug?** Open an issue for the [desktop](https://github.com/PulsarDesk/pulsar-desktop/issues/new/choose)
+  or [mobile](https://github.com/PulsarDesk/pulsar-mobile/issues/new/choose) app, with your system, graphics card
+  and the app's log file.
+- 🛠️ **Want to help?** Issues and pull requests are welcome in every repository.
+- ⭐ **Like it?** A star helps other people find Pulsar.
+
+<p align="center">
+  <sub>Every Pulsar project is free software under the GNU GPLv3 or later.</sub>
+</p>
